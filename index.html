@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play With Page</title>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2 onclick="this.innerHTML='See i changed myself......'">I am a secret message click me to decode.</h2>
+
+        <p>Check me in the next line :  </p>
+        <p id="para" > i am the next line</p>
+
+        
+            <h1 id="heading">I am a heading click the button to see my copy below the button. </h1>
+
+            <button onclick="change()">Click Me</button>
+
+            <div id="copy"> I am replaced by upper line. </div>
+            <div class="hover" onmouseover="onMouse(this)" onmouseout="offMouse(this)">Hover Me</div>
+
+            <div class="hover" id="color" onclick="colorChange()">Click Me</div>
+
+            <img class="img" src="fruit_img1.jpg" onclick="imgChange1()">
+            <img class="img" src="fruit_img2.jpg" onclick="imgChange2()"><br>
+
+            <img id="spin" src="circle.png" onclick="">
+
+            <button onclick="play()">Play</button>
+            <button onclick="stop()">Stop</button>
+        
+    </body>
+</html>
