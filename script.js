@@ -28,11 +28,13 @@ function imgChange2(){
     document.getElementsByClassName('img')[0].src = 'fruit_img4.jpg';
 
 }
+ 
+function spin() {
+    var x = 1000;
+    var y = 9999;
 
-function stop(){
-    document.getElementById('spin').style.animation = "pause";
+    var deg = Math.round(Math.random() * (x-y) + y);
+    document.getElementById('spin').style.transform = "rotate("+deg+"deg)";
 }
-function play(){
-    document.getElementById('spin').style.animationPlayState ='initial';
 
-}
+ 
